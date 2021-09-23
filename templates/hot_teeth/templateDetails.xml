@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+
+	<name>hot_teeth</name>
+	<author>HotThemes</author>
+	<copyright>Copyright 2015 by HotThemes</copyright>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail>
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+	<version>2.2.0</version>
+	<description>TPL_HOT_TEETH_DESCRIPTION</description>
+	<creationDate>December 2015</creationDate>
+	
+	<files>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>export/</folder>
+		<folder>fonts/</folder>
+		<folder>help/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>img/</folder>
+		<folder>js/</folder>
+		<folder>language/</folder>
+		<folder>library/</folder>
+		<folder>styles/</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_hot_teeth.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_hot_teeth.sys.ini</language>
+	</languages>
+	
+	<positions>
+		<position>abovecontent</position>
+		<position>belowcontent</position>
+		<position>logo</position>
+		<position>fontresize</position>
+		<position>advert1</position>
+		<position>advert2</position>
+		<position>advert3</position>
+		<position>advert4</position>
+		<position>advert5</position>
+		<position>advert6</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>copyright</position>
+		<position>footer</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>header3</position>
+		<position>header4</position>
+		<position>header5</position>
+		<position>header6</position>
+		<position>left</position>
+		<position>right</position>
+		<position>search</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>top5</position>
+		<position>top6</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+	</positions>
+	
+	<config>
+		<fields name="params" addfieldpath="/templates/hot_teeth/elements">
+			<fieldset name="layoutdesign" label="TPL_HOT_TEETH_LAYOUT_DESIGN">
+				<field type="tadmin"/>
+				<field name="templateWidth" type="number" default="990" label="TPL_HOT_TEETH_TEMPLATE_WIDTH_LBL" description="TPL_HOT_TEETH_TEMPLATE_WIDTH_DESC"/>
+				<field name="fluidWidth" type="flipyesno" default="0" label="TPL_HOT_TEETH_FLUID_WIDTH_LBL" description="TPL_HOT_TEETH_FLUID_WIDTH_DESC"/>
+				<field name="gridSystem" type="width" default="12" min="1" max="24" />
+				<field name="layoutdesign" type="designlayout" label="TPL_HOT_TEETH_LAYOUT_DESIGN_LBL" description="TPL_HOT_TEETH_LAYOUT_DESIGN_DESC" default="+toprow+top1=4=0,top2=4=0,top3=4=0&amp;++logo=3=0,topmenu=9=0&amp;++header1=12=0&amp;++header2=12=0&amp;++header3=12=0&amp;++advert1=8=0,advert2=4=0&amp;++user1=12=0&amp;++user2=12=0&amp;++joom_content=8=0,right=4=0&amp;++user3=12=0&amp;++bottom1=4=0,bottom2=4=0,bottom3=4=0&amp;++copyright=6=0,footermenu=6=0"/>
+				<field name="cellPaddingHorizontal" type="number" default="0" label="TPL_HOT_TEETH_CELL_PADDING_HORIZONTAL_LBL" description="TPL_HOT_TEETH_CELL_PADDING_HORIZONTAL_DESC" size="3"/>
+				<field name="cellPaddingVertical" type="number" default="0" label="TPL_HOT_TEETH_CELL_PADDING_VERTICAL_LBL" description="TPL_HOT_TEETH_CELL_PADDING_VERTICAL_DESC" size="3"/>
+				<field name="cellMarginHorizontal" type="number" default="15" label="TPL_HOT_TEETH_CELL_MARGIN_HORIZONTAL_LBL" description="TPL_HOT_TEETH_CELL_MARGIN_HORIZONTAL_DESC" size="3"/>
+				<field name="cellMarginVertical" type="number" default="0" label="TPL_HOT_TEETH_CELL_MARGIN_VERTICAL_LBL" description="TPL_HOT_TEETH_CELL_MARGIN_VERTICAL_DESC" size="3"/>
+				<field name="textDirection" type="list" default="ltr" label="TPL_HOT_TEETH_TEXT_DIRECTION" description="TPL_HOT_TEETH_BG_IMAGE_VERTICAL_ALIGN_DESC">
+					<option value="ltr">TPL_HOT_TEETH_TEXT_DIRECTION_LTR</option>
+					<option value="rtl">TPL_HOT_TEETH_TEXT_DIRECTION_RTL</option>
+				</field>
+			</fieldset>
+			<fieldset name="fontsettings" label="TPL_HOT_TEETH_STYLE_DESIGNER">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_HOT_TEETH_FEATURES_BACKGROUND_LBL"/>
+					<field name="bodyBgColor" type="color" label="TPL_HOT_TEETH_BODY_BG_LBL" description="TPL_HOT_TEETH_COLOR_DESC" default="#FFFFFF"/>
+					<field name="bodyBgImageSwitch" type="flipyesno" default="0" label="TPL_HOT_TEETH_BODY_BG_IMAGE_SWITCH_LBL" description="TPL_HOT_TEETH_BODY_BG_IMAGE_SWITCH_DESC"/>
+					<field name="bodyBgImageFile" type="media" label="TPL_HOT_TEETH_BODY_BG_IMAGE_FILE_LBL"/>
+					<field name="bodyBgImageVerticalAlign" type="list" default="top" label="TPL_HOT_TEETH_BG_IMAGE_VERTICAL_ALIGN_LBL" description="TPL_HOT_TEETH_BG_IMAGE_VERTICAL_ALIGN_DESC">
+						<option value="top">Top</option>
+						<option value="center">Center</option>
+						<option value="bottom">Bottom</option>
+					</field>
+					<field name="bodyBgImageHorizontalAlign" type="list" default="center" label="TPL_HOT_TEETH_BG_IMAGE_HORZONTAL_ALIGN_LBL" description="TPL_HOT_TEETH_BG_IMAGE_HORIZONTAL_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="bodyBgImageRepeat" type="list" default="repeat" label="TPL_HOT_TEETH_BG_IMAGE_REPEAT_LBL" description="TPL_HOT_TEETH_BG_IMAGE_REPEAT_DESC">
+						<option value="repeat">TPL_HOT_TEETH_BG_IMAGE_REPEAT_REPEAT_LBL</option>
+						<option value="repeat-x">TPL_HOT_TEETH_BG_IMAGE_REPEAT_REPEAT_HORIZONTALLY_LBL</option>
+						<option value="repeat-y">TPL_HOT_TEETH_BG_IMAGE_REPEAT_REPEAT_VERTICALLY_LBL</option>
+						<option value="no-repeat">TPL_HOT_TEETH_BG_IMAGE_REPEAT_NO_REPEAT_LBL</option>
+					</field>
+					<field name="bodyBgImageFixedSwitch" type="flipyesno" default="" label="TPL_HOT_TEETH_BODY_BG_IMAGE_FIXED_SWITCH_LBL" description="TPL_HOT_TEETH_BODY_BG_IMAGE_FIXED_SWITCH_DESC"/>
+					<field name="containerBgColor" type="color" label="TPL_HOT_TEETH_CONTAINER_BG_LBL" description="TPL_HOT_TEETH_COLOR_DESC" default="transparent"/>
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_HOT_TEETH_H1_LBL"/>
+					<field name="h1Color" type="color" default="#4c4c4c" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="h1Size" type="number" default="44" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/>
+					<field name="h1FontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Montserrat&quot;,&quot;fontWeight&quot;:&quot;700&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;googleFont&quot;:&quot;yes&quot;,&quot;variant&quot;:&quot;700&quot;,&quot;categories&quot;:[&quot;sans-serif&quot;],&quot;subset&quot;:&quot;latin&quot;,&quot;index&quot;:105,&quot;charsets&quot;:[&quot;latin&quot;]}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+					<field name="h1Align" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+		
+					<field name="h1Underline" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_HOT_TEETH_H2_LBL"/>
+					<field name="h2Color" type="color" default="#4c4c4c" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="h2Size" type="number" default="34" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/>
+					<field name="h2FontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Montserrat&quot;,&quot;fontWeight&quot;:&quot;700&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;googleFont&quot;:&quot;yes&quot;,&quot;variant&quot;:&quot;700&quot;,&quot;categories&quot;:[&quot;sans-serif&quot;],&quot;subset&quot;:&quot;latin&quot;,&quot;index&quot;:105,&quot;charsets&quot;:[&quot;latin&quot;]}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+		
+					<field name="h2Align" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+	
+					<field name="h2Underline" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_HOT_TEETH_H3_LBL"/>
+					<field name="h3Color" type="color" default="#4D6476" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="h3Size" type="number" default="24" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/>
+					<field name="h3FontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Montserrat&quot;,&quot;fontWeight&quot;:&quot;400&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;googleFont&quot;:&quot;yes&quot;,&quot;variant&quot;:&quot;regular&quot;,&quot;categories&quot;:[&quot;sans-serif&quot;],&quot;subset&quot;:&quot;latin&quot;,&quot;index&quot;:105,&quot;charsets&quot;:[&quot;latin&quot;]}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+					
+					<field name="h3Align" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+			
+					<field name="h3Underline" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_HOT_TEETH_H4_LBL"/>
+					<field name="h4Color" type="color" default="#4d6476" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="h4Size" type="number" default="24" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/>
+					<field name="h4FontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Montserrat&quot;,&quot;fontWeight&quot;:&quot;400&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;googleFont&quot;:&quot;yes&quot;,&quot;variant&quot;:&quot;regular&quot;,&quot;categories&quot;:[&quot;sans-serif&quot;],&quot;subset&quot;:&quot;latin&quot;,&quot;index&quot;:105,&quot;charsets&quot;:[&quot;latin&quot;]}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+					
+					<field name="h4Align" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+				
+					<field name="h4Underline" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_HOT_TEETH_P_LBL"/>
+					<field name="pColor" type="color" default="#4c4c4c" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="pSize" type="number" default="14" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/>
+					<field name="pFontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Open Sans&quot;,&quot;fontWeight&quot;:&quot;400&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;googleFont&quot;:&quot;yes&quot;,&quot;variant&quot;:&quot;regular&quot;,&quot;categories&quot;:[&quot;sans-serif&quot;],&quot;subset&quot;:&quot;latin&quot;,&quot;index&quot;:116,&quot;charsets&quot;:[&quot;latin&quot;,&quot;latin-ext&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;]}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+					
+					<field name="pAlign" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+						<option value="justify">Justify</option>
+					</field>
+			
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_HOT_TEETH_LINKS_LBL"/>
+					<field name="linksColor" type="color" default="#8B1E20" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="linksHoverColor" type="color" default="#333333" label="TPL_HOT_TEETH_HOVER_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="linksWeight" type="list" default="normal" label="TPL_HOT_TEETH_FONT_WEIGHT_LBL" description="TPL_HOT_TEETH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="linksStyle" type="list" default="normal" label="TPL_HOT_TEETH_FONT_STYLE_LBL" description="TPL_HOT_TEETH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="linksUnderline" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+					<field name="linksUnderlineHover" type="flipyesno" default="0" label="TPL_HOT_TEETH_FONT_UNDERLINE_HOVER_LBL" description="TPL_HOT_TEETH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart8" type="subtabstart" default="" label="TPL_HOT_TEETH_SELECT_STYLE"/>
+					<field name="templateStyle" type="list" default="0" label="TPL_HOT_TEETH_SELECT_TEMPLATE_STYLE">
+						<option value="0">TPL_HOT_TEETH_SELECT_STYLE1</option>
+						<option value="2">TPL_HOT_TEETH_SELECT_STYLE2</option>
+						<option value="3">TPL_HOT_TEETH_SELECT_STYLE3</option>
+					</field>
+					<field name="randomizeCssLink" type="flipyesno" default="1" label="TPL_HOT_TEETH_RANDOMIZE_CSS_LINK_LBL" description="TPL_HOT_TEETH_RANDOMIZE_CSS_LINK_DESC"/>
+			</fieldset>
+			<fieldset name="features" label="TPL_HOT_TEETH_FEATURES">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_HOT_TEETH_FEATURES_LOGO_LBL"/>
+					<field name="logoImageSpacer" type="hotspacer" label="TPL_HOT_TEETH_LOGO_IMAGE_SETTINGS_LBL"/>
+					<field name="logoImageSwitch" type="flipyesno" default="0" label="TPL_HOT_TEETH_LOGO_IMAGE_SWITCH_LBL" description="TPL_HOT_TEETH_LOGO_IMAGE_SWITCH_DESC"/>
+					<field name="logoImageFile" type="media" label="TPL_HOT_TEETH_LOGO_IMAGE_FILE_LBL"/>
+					<field name="logoImageAlt" type="text" label="TPL_HOT_TEETH_LOGO_IMAGE_ALT_LBL" description="TPL_HOT_TEETH_LOGO_IMAGE_ALT_DESC" default="Sparky"/>
+					<field name="logoTextSpacer" type="hotspacer" label="TPL_HOT_TEETH_LOGO_SETTINGS_LBL"/>
+					<field name="logoText" type="text" label="TPL_HOT_TEETH_LOGO_TEXT_LBL" description="TPL_HOT_TEETH_LOGO_TEXT_DESC" default="Sparky"/>
+					<field name="logoColor" type="color" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC" default="#999999"/>
+					<field name="logoSize" type="number" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" default="24" size="3"/>
+					
+					<field name="logoFontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Arial, Helvetica, sans-serif&quot;,&quot;fontWeight&quot;:&quot;normal&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+			
+					<field name="logoAlign" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="sloganTextSpacer" type="hotspacer" label="TPL_HOT_TEETH_SLOGAN_SETTINGS_LBL"/>
+					<field name="sloganText" type="text" label="TPL_HOT_TEETH_SLOGAN_TEXT_LBL" description="TPL_HOT_TEETH_SLOGAN_TEXT_DESC" default=""/>
+					<field name="sloganColor" type="color" label="TPL_HOT_TEETH_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC" default="#999999"/>
+					<field name="sloganSize" type="number" label="TPL_HOT_TEETH_FONT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" default="12" size="3"/>
+				
+					<field name="sloganFontHot" type="hotfont" default="{&quot;fontFamily&quot;:&quot;Arial, Helvetica, sans-serif&quot;,&quot;fontWeight&quot;:&quot;normal&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+				
+					<field name="sloganAlign" type="list" default="left" label="TPL_HOT_TEETH_TEXT_ALIGN_LBL" description="TPL_HOT_TEETH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="copyrightSpacer" type="hotspacer" label="TPL_HOT_TEETH_COPYRIGHT_SETTINGS_LBL"/>
+					<field name="copyright" type="text" default="Your Company" label="TPL_HOT_TEETH_LABEL_COPYRIGHT"/>
+
+					<field name="googleUrl" type="hidden" default="{&quot;Montserrat&quot;:{&quot;variant&quot;:&quot;regular,700&quot;,&quot;charsets&quot;:[&quot;latin&quot;]},&quot;Open Sans&quot;:{&quot;variant&quot;:&quot;regular&quot;,&quot;charsets&quot;:[&quot;latin&quot;,&quot;latin-ext&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;,&quot;latin&quot;]}}" value=""/>
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_HOT_TEETH_FEATURES_TOPPANEL_LBL"/>
+					<field name="topPanelSpacer" type="spacer" label="TPL_HOT_TEETH_TOP_PANEL_DESC"/>
+					<field name="topPanelSwitch" type="flipyesno" default="0" label="TPL_HOT_TEETH_TOP_PANEL_SWITCH_LBL" description="TPL_HOT_TEETH_TOP_PANEL_SWITCH_DESC"/>
+					<field name="topPanelOpen" type="text" default="Open" label="TPL_HOT_TEETH_TOP_PANEL_OPEN_LBL"/>
+					<field name="topPanelClose" type="text" default="Close" label="TPL_HOT_TEETH_TOP_PANEL_CLOSE_LBL"/>
+					<field name="topPanelButtonWidth" type="number" default="75" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_WIDTH_LBL" size="3"/>
+					<field name="topPanelButtonHeight" type="number" default="18" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_HEIGHT_LBL" size="3"/>
+					<field name="topPanelButtonBgColor" type="color" default="#000000" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_BG_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="topPanelButtonTextColor" type="color" default="#FFFFFF" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_TEXT_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="topPanelButtonTextSize" type="number" default="10" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_TEXT_SIZE_LBL" description="TPL_HOT_TEETH_FONT_SIZE_DESC" size="3"/> 
+					<field name="topPanelButtonBorderColor" type="color" default="#666666" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_BORDER_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="topPanelButtonBorderRadius" type="number" default="5" label="TPL_HOT_TEETH_TOP_PANEL_BUTTON_BORDER_RADIUS_LBL" size="3"/>
+					<field name="topPanelBgColor" type="color" default="#000000" label="TPL_HOT_TEETH_TOP_PANEL_BG_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="topPanelH3Color" type="color" default="#CCCCCC" label="TPL_HOT_TEETH_TOP_PANEL_H3_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+					<field name="topPanelTextColor" type="color" default="#CCCCCC" label="TPL_HOT_TEETH_TOP_PANEL_TEXT_COLOR_LBL" description="TPL_HOT_TEETH_COLOR_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_HOT_TEETH_FEATURES_FONT_RESIZE_LBL"/>
+					<field name="fontResizeSpacer" type="spacer" label="TPL_HOT_TEETH_FONT_RESIZE_DESC"/>
+					<field name="fontResizeMinus" type="text" default="A-" label="TPL_HOT_TEETH_FONT_RESIZE_MINUS_LBL" description="TPL_HOT_TEETH_FONT_RESIZE_MINUS_DESC" filter="raw"/>
+					<field name="fontResizeReset" type="text" default="Reset" label="TPL_HOT_TEETH_FONT_RESIZE_RESET_LBL" description="TPL_HOT_TEETH_FONT_RESIZE_RESET_DESC" filter="raw"/>
+					<field name="fontResizePlus" type="text" default="A+" label="TPL_HOT_TEETH_FONT_RESIZE_PLUS_LBL" description="TPL_HOT_TEETH_FONT_RESIZE_PLUS_DESC" filter="raw"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_HOT_TEETH_FEATURES_ANALYTICS_LBL"/>
+					<field name="googleWebAnalyticsSpacer" type="spacer" label="TPL_HOT_TEETH_ANALYTICS_DESC"/>
+					<field name="analyticsSwitch" type="flipyesno" default="0" label="TPL_HOT_TEETH_ANALYTICS_SWITCH_LBL" description="TPL_HOT_TEETH_ANALYTICS_SWITCH_DESC"/>
+					<field name="analyticsAccount" type="text" default="" label="TPL_HOT_TEETH_ANALYTICS_ACCOUNT_LBL" description="TPL_HOT_TEETH_ANALYTICS_ACCOUNT_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_HOT_TEETH_GOOGLE_WEB_FONTS_LBL"/>
+					<field name="fontHot" type="hotfontfeatures" default="" label="TPL_HOT_TEETH_FONT_FAMILY_LBL" description="TPL_HOT_TEETH_FONT_FAMILY_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_HOT_TEETH_SCROLL_TO_TOP_LBL"/>
+					<field name="scrollToTopSpacer" type="spacer" label="TPL_HOT_TEETH_SCROLL_TO_TOP_SPACER_DESC"/>
+					<field name="scrollToTopSwitch" type="flipyesno" default="0" label="TPL_HOT_TEETH_SCROLL_TO_TOP_LBL" description="TPL_HOT_TEETH_SCROLL_TO_TOP_DESC"/>
+					<field name="scrollToTopImageFile" type="media" label="TPL_HOT_TEETH_SCROLL_TO_TOP_IMAGE_FILE_LBL"/>
+					<field name="scrollToTopPosition" type="list" default="bottom_right" label="TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_LBL" description="TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_DESC">
+						<option value="bottom_right">TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_BOTTOM_RIGHT</option>
+						<option value="bottom_left">TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_BOTTOM_LEFT</option>
+						<option value="top_right">TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_TOP_RIGHT</option>
+						<option value="top_left">TPL_HOT_TEETH_SCROLL_TO_TOP_POSITION_TOP_LEFT</option>
+					</field>
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_HOT_TEETH_EQUAL_HEIGHTS_LBL"/>
+					<field name="equalHeightSpacer" type="spacer" label="TPL_HOT_TEETH_EQUAL_HEIGHT_CLASSES_DESC"/>
+					<field name="equalHeightSpacer2" type="spacer" label="TPL_HOT_TEETH_EQUAL_HEIGHT_CLASSES_DESC2"/>
+					<field name="equalHeightClasses" type="textarea" cols="50" rows="3" label="TPL_HOT_TEETH_EQUAL_HEIGHT_CLASSES_LBL" description="TPL_HOT_TEETH_EQUAL_HEIGHT_CLASSES_DESC"/>
+				<field name="subtabstart8" type="subtabstart" default="" label="TPL_HOT_TEETH_PARALLAX_SCROLL_LBL"/>
+					<field name="parallaxScrollSpacer" type="spacer" label="TPL_HOT_TEETH_PARALLAX_SCROLL_DESC"/>
+					<field name="parallaxScroll" type="flipyesno" default="0" label="TPL_HOT_TEETH_PARALLAX_SCROLL_LOAD_LBL" description="TPL_HOT_TEETH_PARALLAX_SCROLL_LOAD_DESC"/>
+					<field name="parallaxScrollClasses" type="textarea" cols="50" rows="3" label="TPL_HOT_TEETH_PARALLAX_SCROLL_CLASSES_LBL" description="TPL_HOT_TEETH_PARALLAX_SCROLL_CLASSES_DESC"/>
+					<field name="parallaxScrollSpeed" type="list" default="2" label="TPL_HOT_TEETH_PARALLAX_SCROLL_SPEED_LBL" description="TPL_HOT_TEETH_PARALLAX_SCROLL_SPEED_DESC">
+						<option value="2">TPL_HOT_TEETH_PARALLAX_SCROLL_SPEED_FAST_LBL</option>
+						<option value="10">TPL_HOT_TEETH_PARALLAX_SCROLL_SPEED_MEDIUM_LBL</option>
+						<option value="20">TPL_HOT_TEETH_PARALLAX_SCROLL_SPEED_SLOW_LBL</option>
+					</field>
+				<field name="subtabstart9" type="subtabstart" default="" label="TPL_HOT_TEETH_IMAGE_ANIMATION_LBL"/>
+					<field name="imageAnimationSpacer" type="spacer" label="TPL_HOT_TEETH_IMAGE_ANIMATION_DESC"/>
+					<field name="imageAnimation" type="flipyesno" default="0" label="TPL_HOT_TEETH_IMAGE_ANIMATION_LOAD_LBL" description="TPL_HOT_TEETH_IMAGE_ANIMATION_LOAD_DESC"/>
+				<field name="subtabstart10" type="subtabstart" default="" label="TPL_HOT_TEETH_SCRIPTS_LBL"/>
+					<field name="loadJqueryUISpacer" type="spacer" label="TPL_HOT_TEETH_LOAD_JQUERYUI_SPACER"/>
+					<field name="loadJqueryUI" type="flipyesno" default="0" label="TPL_HOT_TEETH_LOAD_JQUERYUI_LBL" description="TPL_HOT_TEETH_LOAD_JQUERYUI_DESC"/>
+					<field name="loadFontAwesomeSpacer" type="spacer" label=""/>
+					<field name="loadFontAwesome" type="flipyesno" default="0" label="TPL_HOT_TEETH_LOAD_FONTAWESOME_LBL" description="TPL_HOT_TEETH_LOAD_FONTAWESOME_DESC"/>
+					<field name="loadFontAwesomeSpacer" type="spacer" label="TPL_HOT_TEETH_LOAD_FONTAWESOME_SPACER"/>
+					<field name="lazyLoadSpacer" type="spacer" label="TPL_HOT_TEETH_LOAD_LAZYLOAD_SPACER"/>
+					<field name="lazyLoad" type="flipyesno" default="0" label="TPL_HOT_TEETH_LOAD_LAZYLOAD_LBL" description="TPL_HOT_TEETH_LOAD_LAZYLOAD_DESC"/>
+			</fieldset>
+			<fieldset name="menuconfig" label="TPL_HOT_TEETH_MENUS">
+			    <field name="mnucfg" type="mnucfg" default="[{&quot;name&quot;:&quot;footermenu&quot;,&quot;type&quot;:&quot;none&quot;,&quot;config&quot;:{}},{&quot;name&quot;:&quot;sidemenu&quot;,&quot;type&quot;:&quot;none&quot;,&quot;config&quot;:{}},{&quot;name&quot;:&quot;topmenu&quot;,&quot;type&quot;:&quot;none&quot;,&quot;config&quot;:{}}]" label="TPL_HOT_TEETH_MENUCFG_LBL" description="TPL_HOT_TEETH_MNUCFG_DESC"/>
+			</fieldset>
+			<fieldset name="mobileoptions" label="TPL_HOT_TEETH_MOBILE">
+				<field name="enableResponsive" type="flipyesno" default="1" label="TPL_HOT_TEETH_ENABLE_RESPONSIVE_LBL" description="TPL_HOT_TEETH_ENABLE_RESPONSIVE_DESC"/>
+				<field name="enableResponsiveMenu" type="flipyesno" default="1" label="TPL_HOT_TEETH_ENABLE_RESPONSIVE_MENU_LBL" description="TPL_HOT_TEETH_ENABLE_RESPONSIVE_MENU_DESC"/>
+				<field name="responsiveMenuTriggerValue" type="number" default="980" label="TPL_HOT_TEETH_RESPONSIVE_MENU_TRIGGER_LBL" description="TPL_HOT_TEETH_RESPONSIVE_MENU_TRIGGER_DESC" size="3"/>
+				<field name="menuIconImage" type="media" label="TPL_HOT_TEETH_MENU_ICON_IMAGE_LBL"/>
+		    </fieldset>
+			<fieldset name="exportoptions" label="TPL_HOT_TEETH_EXPORT_OPTIONS">
+			      <field name="export" type="hotexport" default="" label=""/>
+			</fieldset>
+	    </fields>
+   </config>
+</extension>

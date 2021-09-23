@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	  
+	<name>Hot Maps</name> 
+	<author>HotThemes</author> 
+	<creationDate>2011-06-10</creationDate> 
+	<copyright>Copyright 2011 by HotThemes.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>3.5.1</version> 
+	<description>Hot Maps - A commercial Joomla module from HotThemes</description>
+	
+	<files>
+		<filename module="mod_hot_maps">mod_hot_maps.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_maps.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_hot_maps/elements">
+			<fieldset name="system" label="LABEL SYSTEM SETTINGS">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="mapid" type="text" default="" label="LABEL MAP ID" description="DESC MAP ID" />
+				<field name="apikey" type="text" default="" label="LABEL API KEY" description="DESC API KEY" />
+				<field name="module_width" type="text" default="257" label="LABEL WIDTH" description="DESC WIDTH" />
+				<field name="module_width_unit" type="list" default="px" label="LABEL WIDTH UNIT" description="DESC WIDTH UNIT">
+					<option value="px">Pixels</option>
+					<option value="%">Percents</option>
+				</field>
+				<field name="module_height" type="text" default="172" label="LABEL HEIGHT" description="DESC HEIGHT" />
+				<field name="address" type="textarea" rows="3" cols="40" default="" label="LABEL ADDRESS" description="DESC ADDRESS" />
+				<field name="zoom" type="text" default="16" label="LABEL ZOOM" description="DESC ZOOM" />
+				<field name="disablezoom" type="list" default="true" label="LABEL DISABLEZOOM" description="DESC DISABLEZOOM">
+					<option value="true">LABEL YES</option>
+					<option value="false">LABEL NO</option>
+				</field>
+				<field name="mapoffsetx" type="text" default="0" label="LABEL MAP OFFSET X" description="DESC MAP OFFSET" />
+				<field name="mapoffsety" type="text" default="0" label="LABEL MAP OFFSET Y" description="DESC MAP OFFSET" />
+				<field name="disableui" type="list" default="false" label="LABEL DISABLEUI" description="DESC DISABLEUI">
+					<option value="true">LABEL YES</option>
+					<option value="false">LABEL NO</option>
+				</field>
+				<field name="pre_text" type="textarea" rows="4" cols="40" default="" filter="raw" label="LABEL PRETEXT" description="DESC PRETEXT" />
+				<field name="post_text" type="textarea" rows="4" cols="40" default="" filter="raw" label="LABEL POSTTEXT" description="DESC POSTTEXT" />
+			</fieldset>
+			<fieldset name="style" label="LABEL MAPSTYLE">
+				<field name="border" type="text" default="none" label="LABEL BORDER" description="DESC BORDER" />
+				<field name="satellite" type="list" default="1" label="LABEL SATELLITE" description="DESC SATELLITE">
+					<option value="1">LABEL YES</option>
+					<option value="0">LABEL NO</option>
+				</field>
+				<field name="hue" type="color" default="" label="LABEL HUE" description="DESC COLOR" />
+				<field name="saturation" type="text" default="0" label="LABEL SATURATION" description="DESC SATURATION" />
+				<field name="lightness" type="text" default="0" label="LABEL LIGHTNESS" description="DESC LIGHTNESS" />
+				<field name="gamma" type="text" default="1" label="LABEL GAMMA" description="DESC GAMMA" />
+				<field name="visibility" type="list" default="on" label="LABEL VISIBILITY" description="DESC VISIBILITY">
+					<option value="on">LABEL FULL</option>
+					<option value="simplified">LABEL SIMPLIFIED</option>
+				</field>
+				<field name="labels" type="list" default="on" label="LABEL LABELS" description="DESC LABELS">
+					<option value="on">LABEL ENABLE</option>
+					<option value="off">LABEL DISABLE</option>
+				</field>
+				<field name="water" type="color" default="" label="LABEL WATER" description="LABEL COLOR" />
+				<field name="border" type="text" default="none" label="LABEL BORDER" description="DESC BORDER" />
+			</fieldset>
+			<fieldset name="markers" label="LABEL MARKERS">
+				<field name="defaultmarker" type="list" default="1" label="LABEL DEFAULTMARKER" description="DESC DEFAULTMARKER">
+					<option value="1">LABEL ENABLE</option>
+					<option value="0">LABEL DISABLE</option>
+				</field>
+				<field type="spacer" label="LABEL FINDLATLNG" description="" />
+				<field type="spacer" label="LABEL ADDITIONALMARKER1" description="" />
+				<field name="markerlat1" type="text" default="" label="LABEL LATITUDE" description="DESC LATITUDE" />
+				<field name="markerlng1" type="text" default="" label="LABEL LONGITUDE" description="DESC LONGITUDE" />
+				<field name="markertitle1" type="text" default="" label="LABEL MARKERTITLE" description="DESC MARKERTITLE" />
+				<field type="spacer" label="LABEL ADDITIONALMARKER2" description="" />
+				<field name="markerlat2" type="text" default="" label="LABEL LATITUDE" description="DESC LATITUDE" />
+				<field name="markerlng2" type="text" default="" label="LABEL LONGITUDE" description="DESC LONGITUDE" />
+				<field name="markertitle2" type="text" default="" label="LABEL MARKERTITLE" description="DESC MARKERTITLE" />
+				<field type="spacer" label="LABEL ADDITIONALMARKER3" description="" />
+				<field name="markerlat3" type="text" default="" label="LABEL LATITUDE" description="DESC LATITUDE" />
+				<field name="markerlng3" type="text" default="" label="LABEL LONGITUDE" description="DESC LONGITUDE" />
+				<field name="markertitle3" type="text" default="" label="LABEL MARKERTITLE" description="DESC MARKERTITLE" />
+				<field type="spacer" label="LABEL ADDITIONALMARKER4" description="" />
+				<field name="markerlat4" type="text" default="" label="LABEL LATITUDE" description="DESC LATITUDE" />
+				<field name="markerlng4" type="text" default="" label="LABEL LONGITUDE" description="DESC LONGITUDE" />
+				<field name="markertitle4" type="text" default="" label="LABEL MARKERTITLE" description="DESC MARKERTITLE" />
+				<field type="spacer" label="LABEL ADDITIONALMARKER5" description="" />
+				<field name="markerlat5" type="text" default="" label="LABEL LATITUDE" description="DESC LATITUDE" />
+				<field name="markerlng5" type="text" default="" label="LABEL LONGITUDE" description="DESC LONGITUDE" />
+				<field name="markertitle5" type="text" default="" label="LABEL MARKERTITLE" description="DESC MARKERTITLE" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

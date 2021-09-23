@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+   <params>
+   		<param name="emails" type="text" default="" label="Notification Email" description="After a successful update emails will be sent. Multiple email id should be comma separated" />
+   </params>
+   
+	<fieldset
+		name="Common"
+		label="Common"
+		description="Common">
+		<field name="emails" type="text" default="" label="Notification Email" description="After a successful update emails will be sent. Multiple email id should be comma separated"  />
+	</fieldset>		   
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_autoupdate"
+			section="component" />
+	</fieldset>	
+</config>

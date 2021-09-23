@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <extension version="2.5" type="file" method="upgrade">
+      <name>RSContact! Russian Language Pack</name>
+      <version>1.0.0</version>
+      <creationDate>24 July 2018</creationDate>
+      <author>RSJoomla!</author>
+      <authorEmail></authorEmail>
+      <authorUrl></authorUrl>
+      <copyright>Copyright (C) 2018. All rights reserved.</copyright>
+      <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+      <description>RSContact! Russian Language Pack by RSJoomla!</description>
+      <fileset>
+          <!-- Site component language folder  for Joomla! 2.5-->
+		  <files folder="site25" target="language/ru-RU">
+			<filename>ru-RU.mod_rscontact.ini</filename>
+			<filename>ru-RU.mod_rscontact.sys.ini</filename>
+		  </files>
+      </fileset>
+  </extension>

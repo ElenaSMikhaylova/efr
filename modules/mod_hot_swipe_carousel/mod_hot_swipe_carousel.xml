@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Hot Swipe Carousel</name> 
+	<author>HotThemes</author> 
+	<creationDate>2015-05-05</creationDate> 
+	<copyright>Copyright 2015 by HotThemes</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>3.5.1.1</version> 
+	<description>Hot Swipe Carousel - Commercial Joomla module from HotThemes</description>
+	<files>
+		<filename module="mod_hot_swipe_carousel">mod_hot_swipe_carousel.php</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_swipe_carousel.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="system" label="LABEL SYSTEM SETTINGS">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="uniqueid" type="text" default="" label="LABEL ID" description="DESC ID" />
+				<field name="fullWidth" type="list" default="1" label="LABEL FULL WIDTH" description="DESC FULL WIDTH">
+					<option value="1">LABEL FULL SLIDE WIDTH</option>
+					<option value="0">LABEL CUSTOM WIDTH</option>
+				</field>
+				<field name="slideWidth" type="text" default="23%" label="LABEL SLIDE WIDTH" description="DESC SLIDE WIDTH" />
+				<field name="slideMargin" type="text" default="2%" label="LABEL SLIDE MARGIN" description="DESC SLIDE MARGIN" />
+				<field name="textAreaWidth" type="text" default="50" label="LABEL TEXT AREA WIDTH" description="DESC TEXT AREA WIDTH" />
+				<field name="textAreaLeft" type="text" default="24" label="LABEL TEXT AREA LEFT" description="DESC TEXT AREA LEFT" />
+				<field name="textAreaCenter" type="list" default="0" label="LABEL TEXT AREA CENTER" description="DESC TEXT AREA CENTER">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="textAreaTop" type="text" default="80" label="LABEL TEXT AREA TOP" description="DESC TEXT AREA TOP" />
+				<field name="textAreaPadding" type="text" default="1" label="LABEL TEXT PADDING" description="DESC TEXT PADDING" />
+			</fieldset>
+			<fieldset name="style" label="LABEL STYLE">
+				<field name="boxBgColor" type="text" default="255,255,255" label="LABEL BOX BG COLOR" description="DESC BOX BG COLOR" />
+				<field name="boxTransparency" type="text" default="0.8" label="LABEL BOX TRANSPARENCY" description="DESC BOX TRANSPARENCY" />
+				<field name="textColor" type="color" default="#000000" label="LABEL TEXT COLOR" description="LABEL COLOR" />
+				<field name="headingSize" type="text" default="24" label="LABEL HEADING SIZE" description="DESC TEXT SIZE" />
+				<field name="textSize" type="text" default="12" label="LABEL TEXT SIZE" description="DESC TEXT SIZE" />
+			</fieldset>
+			<fieldset name="navigation" label="LABEL NAVIGATION">
+				<field name="navArrows" type="list" default="1" label="LABEL NAVIGATION ARROWS">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+				<field name="navDots" type="list" default="1" label="LABEL NAVIGATION DOTS">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			</fieldset>
+			<fieldset name="animation" label="LABEL ANIMATION">
+				<field name="pauseTime" type="text" default="5000" label="LABEL PAUSE" description="DESC PAUSE" />
+			</fieldset>
+			<fieldset name="image1" label="LABEL IMAGE1">
+				<field name="enableSlide1" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image1" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt1" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading1" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText1" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority1" type="list" default="1" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image2" label="LABEL IMAGE2">
+				<field name="enableSlide2" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image2" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt2" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading2" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText2" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority2" type="list" default="2" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image3" label="LABEL IMAGE3">
+				<field name="enableSlide3" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image3" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt3" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading3" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText3" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority3" type="list" default="3" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image4" label="LABEL IMAGE4">
+				<field name="enableSlide4" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image4" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt4" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading4" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText4" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority4" type="list" default="4" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image5" label="LABEL IMAGE5">
+				<field name="enableSlide5" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image5" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt5" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading5" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText5" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority5" type="list" default="5" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image6" label="LABEL IMAGE6">
+				<field name="enableSlide6" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image6" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt6" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading6" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText6" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority6" type="list" default="6" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image7" label="LABEL IMAGE7">
+				<field name="enableSlide7" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image7" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt7" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading7" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText7" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority7" type="list" default="7" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image8" label="LABEL IMAGE8">
+				<field name="enableSlide8" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image8" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt8" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading8" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText8" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority8" type="list" default="8" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image9" label="LABEL IMAGE9">
+				<field name="enableSlide9" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image9" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt9" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading9" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText9" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority9" type="list" default="9" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image10" label="LABEL IMAGE10">
+				<field name="enableSlide10" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image10" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt10" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading10" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText10" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority10" type="list" default="10" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image11" label="LABEL IMAGE11">
+				<field name="enableSlide11" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image11" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt11" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading11" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText11" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority11" type="list" default="11" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image12" label="LABEL IMAGE12">
+				<field name="enableSlide12" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image12" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt12" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading12" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText12" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority12" type="list" default="12" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image13" label="LABEL IMAGE13">
+				<field name="enableSlide13" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image13" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt13" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading13" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText13" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority13" type="list" default="13" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image14" label="LABEL IMAGE14">
+				<field name="enableSlide14" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image14" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt14" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading14" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText14" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority14" type="list" default="14" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image15" label="LABEL IMAGE15">
+				<field name="enableSlide15" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image15" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt15" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading15" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText15" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority15" type="list" default="15" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image16" label="LABEL IMAGE16">
+				<field name="enableSlide16" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image16" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt16" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading16" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText16" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority16" type="list" default="16" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image17" label="LABEL IMAGE17">
+				<field name="enableSlide17" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image17" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt17" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading17" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText17" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority17" type="list" default="17" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image18" label="LABEL IMAGE18">
+				<field name="enableSlide18" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image18" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt18" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading18" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText18" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority18" type="list" default="18" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image19" label="LABEL IMAGE19">
+				<field name="enableSlide19" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image19" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt19" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading19" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText19" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority19" type="list" default="19" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+			<fieldset name="image20" label="LABEL IMAGE20">
+				<field name="enableSlide20" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image20" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt20" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading20" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText20" type="textarea" cols="30" rows="10" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="priority20" type="list" default="20" label="LABEL PRIORITY" description="DESC PRIORITY">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

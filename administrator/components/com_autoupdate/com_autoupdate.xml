@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="3.0">
+	<name>Autoupdate</name>
+	<creationDate>2015-11-10</creationDate>
+	<author>Joomlashowroom.com</author>
+	<authorEmail>info@joomlashowroom.com</authorEmail>
+	<authorUrl>http://www.joomlashowroom.com</authorUrl>
+	<copyright>Copyright (C) 2015 Joomlashowroom.com. All rights reserved.</copyright>	
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>v1.0.2</version>
+	<description>COM_AUTOUPDATE_DESC</description>
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<files folder="site">
+			<filename>autoupdate.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<folder>views</folder>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_autoupdate.ini</language>
+	</languages>
+
+
+	
+	<administration>
+		<menu link="index.php?option=com_autoupdate">COM_AUTOUPDATE_TITLE</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>autoupdate.php</filename>
+			<folder>assets</folder>
+		</files>	
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_autoupdate.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_autoupdate.sys.ini</language>
+		</languages>
+		
+	</administration>
+	<updateservers>
+		<server type="extension" priority="1" name="auto update core">http://www.joomlashowroom.com/updates_xml/autoupdate3.xml</server>
+	</updateservers>
+</extension>

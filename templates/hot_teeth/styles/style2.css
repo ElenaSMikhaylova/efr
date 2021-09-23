@@ -1,0 +1,154 @@
+/*------------------------------------------------------------------------
+# "Hot Teeth" - Commercial Joomla Template
+# Copyright (C) 2015 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotThemes
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+/* dark green */
+
+p.readmore a {
+	background-color: #4E5F59;
+}
+
+.logorow,
+.logorow:before,
+.logorow:after,
+.searchrow,
+.service_plus,
+.bottomrow {
+	background: #4E5F59;
+}
+
+.mnu_topmenu ul {
+	border-top: 15px solid #4E5F59;
+}
+
+h3,
+h4,
+.doctorsrow .moduletable .span4.box2 h4,
+.doctorsrow .moduletable .span4.box3 h4,
+.testimonialsrow strong {
+	color: #4E5F59;
+}
+
+/* green */
+
+a:hover,
+.sparky_home .items-row .item time,
+.contentrow h2 a:hover,
+.toprow .mp_top1 i,
+.toprow .mp_top2 i,
+.mnu_sidemenu > li > a,
+.mnu_sidemenu2 > li > a {
+    color:#439B80;
+}
+
+ul.tags a.label {
+    color: #439B80 !important;
+}
+
+p.readmore a:hover,
+p.readmore a:focus,
+div.hot_appointment,
+.Zebra_DatePicker,
+.doctors_share i,
+.servicesrow .moduletable .span4:hover .service_plus,
+.mp_right .moduletable_featured,
+.mnu_topmenu ul,
+.mnu_topmenu > li.active,
+.mnu_topmenu li:hover,
+.mnu_topmenu li ul li:hover,
+.maprow .mp_user3,
+.toprow .mp_top3 i:hover {
+	background: #439B80;
+}
+
+.doctors_share_open {
+	background: #439B80 url(../images/custom/social_bg_2.png) no-repeat right;
+}
+
+ul.tags a.label {
+	border:2px solid #439B80;
+}
+
+div.sparky_logo a:before {
+	content: "";
+	position: absolute;
+	background: #439B80 url(../images/logo.png) no-repeat -15px 10px;
+}
+
+.doctors_gradient {
+	background: url(../images/custom/gradient_green.png) repeat-x;
+	opacity: 0;
+	transition:opacity 0.5s;
+}
+
+.servicesrow .moduletable .span4:hover {
+	background: #16d37f;
+	background: -moz-linear-gradient(top, #16d37f 0%, #0fa47f 100%);
+	background: -webkit-linear-gradient(top, #16d37f 0%, #0fa47f 100%);
+	background: linear-gradient(to bottom, #16d37f 0%, #0fa47f 100%);
+}
+
+.mp_user4:before {
+	background: url(../images/custom/map_bg2.png) no-repeat;
+}
+
+.contactrow h3,
+.mp_right h3 {
+	background: #f5f5f5 url(../images/custom/appointment_icon2.png) no-repeat 30px 6px;
+}
+
+/* red */
+
+.button, .btn {
+	border: 2px solid #F34848;
+}
+
+.button:hover,
+.btn:hover,
+.Zebra_DatePicker td.dp_selected,
+.Zebra_DatePicker td.dp_hover {
+	background: #F34848;
+}
+
+.flickity-prev-next-button:hover .arrow {
+    fill: #F34848;
+}
+
+.hot_appointment input.button:hover,
+ul.tags a.label:hover,
+.rapid_contact input.button:hover {
+	background:#F34848;
+	border:2px solid #F34848;
+}
+
+a,
+.mnu_footermenu > li > a:hover,
+.doctorsrow h4,
+#search_enable:hover,
+#close_search:hover {
+	color: #F34848;
+}
+
+.servicesrow .moduletable .span4:hover .service_plus:hover {
+    background: #F34848;
+    transition: background 0.5s;
+}
+
+.copyrightrow ul.mnu_footermenu li:hover {
+    background: url(../images/custom/footermenu_bg_red.png) left no-repeat;
+    transition: all 0.3s;
+}
+
+.testimonialsrow .span4 {
+	background: url(../images/custom/testimonial_bg2.png) no-repeat;
+}
+
+/* darker green */
+
+.copyrightrow {
+	background: #46554f;
+}

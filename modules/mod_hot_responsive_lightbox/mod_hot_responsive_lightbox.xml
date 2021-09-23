@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="3.0"
+	  client="site"
+	  method="upgrade">
+	  
+	<name>Hot Responsive Lightbox</name> 
+	<author>HotThemes</author> 
+	<creationDate>2014-12-19</creationDate> 
+	<copyright>Copyright 2014 by HotThemes</copyright> 
+	<license>This extension in released under the GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license> 
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>3.7.0</version> 
+	<description>Hot Responsive Lightbox - Commercial Joomla Module by HotThemes</description>
+	
+	<files>
+		<filename module="mod_hot_responsive_lightbox">mod_hot_responsive_lightbox.php</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_responsive_lightbox.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="thumbnails" label="LABEL THUMBNAILS SETTINGS">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="uniqueid" type="text" default="" label="LABEL ID" description="DESC ID" />
+				<field name="lightboxMode" type="list" default="g" label="LABEL LIGHTBOX MODE" description="DESC LIGHTBOX MODE">
+					<option value="a">With activity indication</option>
+					<option value="b">With overlay and activity indication</option>
+					<option value="c">With "close" button and activity indication</option>
+					<option value="d">With caption and activity indication</option>
+					<option value="e">With navigation and activity indication</option>
+					<option value="g">With arrows and activity indication</option>
+					<option value="f">Combination</option>
+				</field>
+				<field type="spacer" label="IMPORTANT: If you are changing any of these parameters, please delete the /thumbs directory inside your images directory (if it exists). The changes won't take effect until you delete the directory. You can delete it via Media Manager or FTP." description="" />
+				<field name="images_dir" type="text" default="" label="LABEL FOLDER" description="DESC FOLDER" />
+				<field name="thumbsWidth" type="text" default="200" label="LABEL THUMBS WIDTH" description="DESC THUMBS WIDTH" />
+				<field name="thumbsHeight" type="text" default="200" label="LABEL THUMBS HEIGHT" description="DESC THUMBS HEIGHT" />
+				<field name="imageQuality" type="text" size="5" default="80" label="Thumbnails Image Quality" description="Image quality of thumbnails."/>
+				<field name="thumbsMarginV" type="text" default="10" label="LABEL MARGIN V" description="DESC MARGIN V" />
+				<field name="thumbsMarginH" type="text" default="10" label="LABEL MARGIN H" description="DESC MARGIN H" />
+				<field name="thumbsPadding" type="text" default="3" label="LABEL PADDING" description="DESC PADDING" />
+				<field name="borderWidth" type="text" default="1" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH" />
+				<field name="borderColor" type="color" default="#cccccc" label="LABEL BORDER COLOR" description="DESC COLOR" />
+				<field name="borderHoverColor" type="color" default="#ffffff" label="LABEL BORDER HOVER COLOR" description="DESC COLOR" />
+				<field name="backgroundColor" type="color" default="#eeeeee" label="LABEL BACKGROUND COLOR" description="DESC COLOR" />
+				<field name="backgroundHoverColor" type="color" default="#ffffff" label="LABEL BACKGROUND HOVER COLOR" description="DESC COLOR" />
+				<field name="overlay" type="text" default="255,255,255" label="LABEL OVERLAY COLOR" description="DESC RGB COLOR" />
+				<field name="alt" type="textarea" rows="4" cols="10" default="" label="LABEL ALT" description="DESC ALT" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
